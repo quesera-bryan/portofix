@@ -14,8 +14,10 @@
   --panel: #141414;
   --paper: #f5f5f5;
   --muted: #a0a0a0;
-  --pink: #edc92c;
+  --pink: #EDC92C;
   --line: #333333;
+  --wall-texture: url('/assets/graphics/rough-wall.svg?v=3');
+  --wall-gradient: radial-gradient(circle at 50% 50%, #1d1d1d 0%, #141414 48%, #090909 100%);
   --display: 'Space Grotesk', sans-serif;
   --hand: 'Caveat', cursive;
   --body: 'Inter', sans-serif;
@@ -32,6 +34,10 @@
 body {
   min-width: 320px;
   margin: 0;
+  background-color: #1b1b1b;
+  background-image: var(--wall-gradient), var(--wall-texture);
+  background-attachment: fixed;
+  background-size: cover, 256px 256px;
 }
 
 body,
